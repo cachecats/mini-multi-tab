@@ -1,0 +1,25 @@
+<view class='container'>
+  <view class='content'>
+    <view wx:if='{{currentTab == 0}}'>
+      <home/>
+    </view>
+    <view wx:if='{{currentTab == 1}}'>
+      <mine/>
+    </view>
+  </view>
+
+
+  <!-- 下面的两个tab -->
+  <view class='bottom-tab'>
+    <view class='tab-item {{currentTab == 0 ? "active" : ""}}' data-current="0" bindtap='switchTab'>
+      <image src='{{currentTab == 0 ? "../../assets/home_active.png" : "../../assets/home.png"}}' class='item-img'></image>
+      <text class='item-text'>主页</text>
+    </view>
+
+    <view class='tab-item {{currentTab == 1 ? "active" : ""}}' data-current="1" bindtap='switchTab'>
+      <image src='{{currentTab == 1 ? "../../assets/mine_active.png" : "../../assets/mine.png"}}' class='item-img'></image>
+      <text class='item-text'>我的</text>
+
+    </view>
+  </view>
+</view>

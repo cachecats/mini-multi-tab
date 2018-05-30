@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "movie": "movie/movie",
+    "music": "music/music"
+  }
+}

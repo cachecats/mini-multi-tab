@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "hot": "hot/hot",
+    "new": "new/new"
+  }
+}
